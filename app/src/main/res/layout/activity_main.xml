@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/dosa_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food" />
+
+
+    <ImageView
+        android:id="@+id/mail_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/dosa_img"
+        android:layout_margin="45dp"
+        android:src="@drawable/mail" />
+
+    <ImageView
+        android:id="@+id/phone_img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/mail_img"
+        android:layout_marginLeft="45dp"
+
+        android:src="@drawable/phonecall" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mail_img"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="43dp"
+        android:text="The Royal Indian Restaurant"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_alignLeft="@+id/mail_img"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="-25dp"
+        android:layout_toRightOf="@+id/mail_img"
+        android:text="royalindianrestaurant@royal.com" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_text"
+        android:layout_alignLeft="@+id/phone_img"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="+1 165-874 1476 " />
+
+    <TextView
+        android:id="@+id/address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_img"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="15311 Wall Street, New York City " />
+
+    <TextView
+        android:id="@+id/addressde_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_img"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_text"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="The Restaurant offers wide range of Indian Vegetarian foods made with real desi ghee and butter " />
+
+    <TextView
+        android:id="@+id/hop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_text"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="Hour of Operation"/>
+
+    <TextView
+        android:id="@+id/hoptime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hop_text"
+        android:layout_marginLeft="-32dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/phone_img"
+        android:text="Monday - Sunday                        10:00 AM - 10:00 PM    "/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:text="Developed by Me Pvt Ltd"/>
+
+</RelativeLayout>
